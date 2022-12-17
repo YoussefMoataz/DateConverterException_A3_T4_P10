@@ -15,6 +15,12 @@ int main() {
         dateConverter.setNumerical("07/03");
         cout << dateConverter.getAlphabetical() << endl;
 
+        dateConverter.setNumerical("9/33");
+        cout << dateConverter.getAlphabetical() << endl; // error
+
+        dateConverter.setNumerical("14/30");
+        cout << dateConverter.getAlphabetical() << endl; // error
+
     } catch (MonthError& monthError) {
 
         cout << monthError.getMessage() << endl;

@@ -58,7 +58,7 @@ public:
             monthInt = stoi(month);
             daysInt = stoi(days);
 
-            cout << monthInt << " " << daysInt << endl;
+//            cout << monthInt << " " << daysInt << endl;
 
             if (monthInt < 1 || monthInt > 12) {
                 throw MonthError("Month unavailable");
