@@ -12,7 +12,7 @@ int main() {
         dateConverter.setNumerical("1/31");
         cout << dateConverter.getAlphabetical() << endl;
 
-        dateConverter.setNumerical("1/32");
+        dateConverter.setNumerical("07/03");
         cout << dateConverter.getAlphabetical() << endl;
 
     } catch (MonthError& monthError) {

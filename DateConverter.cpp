@@ -53,10 +53,12 @@ public:
 
             }
 
-//            cout << month << " " << days;
+//            cout << month << " " << days << endl;
 
             monthInt = stoi(month);
             daysInt = stoi(days);
+
+            cout << monthInt << " " << daysInt << endl;
 
             if (monthInt < 1 || monthInt > 12) {
                 throw MonthError("Month unavailable");
@@ -66,7 +68,7 @@ public:
                 throw DayError("Day unavailable");
             }
 
-            alphabetical = monthNames[monthInt] + " " + to_string(monthDays[monthInt]);
+            alphabetical = monthNames[monthInt] + " " + to_string(daysInt);
 
         } else {
 
