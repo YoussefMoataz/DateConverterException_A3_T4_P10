@@ -63,7 +63,7 @@ public:
             }
 
             if (daysInt < 1 || daysInt > monthDays[monthInt]) {
-                throw DayError("Date unavailable");
+                throw DayError("Day unavailable");
             }
 
             alphabetical = monthNames[monthInt] + " " + to_string(monthDays[monthInt]);

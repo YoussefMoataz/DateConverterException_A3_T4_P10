@@ -10,8 +10,10 @@ int main() {
     try {
 
         dateConverter.setNumerical("1/31");
+        cout << dateConverter.getAlphabetical() << endl;
 
-        cout << dateConverter.getAlphabetical();
+        dateConverter.setNumerical("1/32");
+        cout << dateConverter.getAlphabetical() << endl;
 
     } catch (MonthError& monthError) {
 
