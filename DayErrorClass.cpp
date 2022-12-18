@@ -5,18 +5,11 @@
 
 using namespace std;
 
-class DayError : std::exception {
-private:
-    string message;
+class DayError : public exception {
 
 public:
-
-    DayError(string msg) {
-        message = msg;
-    }
-
-    string getMessage() {
-        return message;
+    virtual const char *what() const throw() {
+        return "Invalid Day";
     }
 
 };

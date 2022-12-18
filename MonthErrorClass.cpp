@@ -5,18 +5,11 @@
 
 using namespace std;
 
-class MonthError : std::exception {
-private:
-    string message;
+class MonthError : public exception {
 
 public:
-
-    MonthError(string msg) {
-        message = msg;
-    }
-
-    string getMessage() {
-        return message;
+    virtual const char *what() const throw() {
+        return "Invalid Month";
     }
 
 };

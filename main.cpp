@@ -23,11 +23,11 @@ int main() {
 
     } catch (MonthError& monthError) {
 
-        cout << monthError.getMessage() << endl;
+        cout << monthError.what() << endl;
 
     } catch (DayError& dayError) {
 
-        cout << dayError.getMessage() << endl;
+        cout << dayError.what() << endl;
 
     }
 

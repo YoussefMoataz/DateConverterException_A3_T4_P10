@@ -31,7 +31,7 @@ public:
         int daysInt;
 
         if (input.length() < 3) {
-            throw MonthError("Month can Not be empty");
+            throw MonthError();
 //            throw DayError("Day can Not be empty");
 //            return;
         }
@@ -45,11 +45,11 @@ public:
 
             if (month.length() < 1) {
 
-                throw MonthError("Month can Not be empty");
+                throw MonthError();
 
             } else if (days.length() < 1) {
 
-                throw DayError("Day can Not be empty");
+                throw DayError();
 
             }
 
@@ -61,18 +61,18 @@ public:
 //            cout << monthInt << " " << daysInt << endl;
 
             if (monthInt < 1 || monthInt > 12) {
-                throw MonthError("Month unavailable");
+                throw MonthError();
             }
 
             if (daysInt < 1 || daysInt > monthDays[monthInt]) {
-                throw DayError("Day unavailable");
+                throw DayError();
             }
 
             alphabetical = monthNames[monthInt] + " " + to_string(daysInt);
 
         } else {
 
-            throw MonthError("Unavailable");
+            throw MonthError();
 
         }
 
